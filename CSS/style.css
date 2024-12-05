@@ -9,12 +9,83 @@
 
 /* Header */
 
-header {
-    background-color: #FF6200;
-}
- 
-.container img {
-    width: 50px;
+.container {
+    width: 100%;
+    background-color:#FF6200 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
+.container img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.navigation ul, li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navigation ul, li, a {
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+} 
+
+.account input {
+    font-size: 16px;
+    color: #7e7d7d;
+    width: 60px;
+    height: -5px;
+    border: none;
+}
+
+.account {
+    display: flex;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.account p{
+    width: 20px;
+    display: flex;
+    padding: 2px;
+    color: #7e7d7d;
+}
+
+
+.container i {
+    background-color: #C8BBBD;
+    color: #7e7d7d;
+    padding: 12px;
+    font-size: 20px;
+    right: 700px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container button {
+    background-color: transparent;
+    width: 200px;
+    padding: 14px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.container button:hover{
+    background-color: #fff;
+    color: #FF6200;
+}
 
