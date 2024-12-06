@@ -7,85 +7,77 @@
     font-family: "Roboto", sans-serif;
 }
 
+:root {
+    /* Paleta de cores */
+    --cor-principal:#FF6200;
+
+    --cor-secundaria: #616161;
+
+    --cor-botao: #C8BBBD;
+}
+
 /* Header */
 
 .container {
-    width: 100%;
-    background-color:#FF6200 ;
+    background-color: var(--cor-principal);
     display: flex;
+    padding: 15px;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
 }
+
+/* Logo */
 
 .container img {
     width: 50px;
-    height: 50px;
     cursor: pointer;
 }
 
-.navigation ul, li {
+/* Navegação */
+
+.container ul, li, a {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 20px;
-}
-
-.navigation ul, li, a {
-    font-size: 19px;
-    font-weight: 600;
-    color: #fff;
-} 
-
-.account input {
-    font-size: 16px;
-    color: #7e7d7d;
-    width: 60px;
-    height: -5px;
-    border: none;
-}
-
-.account {
-    display: flex;
-    background-color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    
-}
-
-.account p{
-    width: 20px;
-    display: flex;
-    padding: 2px;
-    color: #7e7d7d;
-}
-
-
-.container i {
-    background-color: #C8BBBD;
-    color: #7e7d7d;
-    padding: 12px;
-    font-size: 20px;
-    right: 700px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.container button {
-    background-color: transparent;
-    width: 200px;
-    padding: 14px;
-    color: #fff;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 10px;
-    border: 1px solid #fff;
+    color: #fff;
     cursor: pointer;
 }
 
-.container button:hover{
+/* Open account */
+
+.container .account{
     background-color: #fff;
-    color: #FF6200;
+    display: flex;
+    padding: 15px;
+    width: 170px;
+    border-radius: 10px;
 }
+
+.account, input {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 45%;
+    border: none;
+    font-size: 17px;
+    color: var(--cor-secundaria);
+
+}
+
+/* Lock */
+
+.lock i {
+    position: absolute;
+    background-color: var(--cor-botao);
+    color: var(--cor-secundaria);
+    font-size: 18px;
+    display: flex;
+    padding: 15px;
+    top: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 
