@@ -7,10 +7,9 @@
     <title>Banco Itaú | Feito com você.</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="img/logo-favicon.png" type="image/x-icon">
-    <!-- FONTAWESOME ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- IONICONS ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,28 +21,27 @@
 <body>
     <header>
         <div class="container">
-            <div class="img">
-                <img src="img/ITAU_LOGO_HEX_48X48.png" alt="">
-            </div>
-            <nav class="navigation">
-                <ul>
-                    <li>Para você</li>
-                    <li>Para empresas</li>
-                    <li>Ajuda</li>
-                    <li>Busca</li>
+            <img src="img/ITAU_LOGO_HEX_48X48.png" alt="">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#">Para você</a></li>
+                    <li><a href="#">Para empresas</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Busca</a></li>
                 </ul>
             </nav>
-            <div class="account">
+
+            <div class="agency">
                 <input type="text" placeholder="Agência">
-                <p> | </p>
+                <div class="linha">|</div>
                 <input type="text" placeholder="Conta">
             </div>
-            <div class="lock">
-                <i class="fa-solid fa-lock"></i>
-            </div>
-            <div class="acess">+ Acessos</div>
-            <button class="open-account">Abra sua conta </button>
+            <div class="icon"><ion-icon name="lock-closed-outline"></ion-icon></div>
+            <div><a class="acess" href="#"> <span>+</span> Acessos</a></div>
+            <button class="account">Abra a sua conta</button>
         </div>
+
+
 
     </header>
 </body>

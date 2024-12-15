@@ -11,73 +11,134 @@
     /* Paleta de cores */
     --cor-principal:#FF6200;
 
-    --cor-secundaria: #616161;
+    --cor-secundaria: #525050;
 
     --cor-botao: #C8BBBD;
 }
+
 
 /* Header */
 
 .container {
     background-color: var(--cor-principal);
     display: flex;
-    padding: 15px;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
 }
-
-/* Logo */
 
 .container img {
-    width: 50px;
+    width: 68px;
+    padding: 10px;
     cursor: pointer;
 }
 
-/* Navegação */
-
-.container ul, li, a {
+.navbar {
     display: flex;
     gap: 20px;
-    font-size: 18px;
-    font-weight: 600;
+}
+
+.navbar a{
     color: #fff;
-    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    bottom: 0;
 }
 
-/* Open account */
-
-.container .account{
+.navbar a::after {
+    content: " ";
+    width: 0%;
+    height: 5px;
     background-color: #fff;
-    display: flex;
-    padding: 15px;
-    width: 170px;
-    border-radius: 10px;
-}
-
-.account, input {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 45%;
-    border: none;
-    font-size: 17px;
-    color: var(--cor-secundaria);
-
-}
-
-/* Lock */
-
-.lock i {
     position: absolute;
-    background-color: var(--cor-botao);
-    color: var(--cor-secundaria);
-    font-size: 18px;
+    bottom: -32px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.agency {
+    position: relative;
     display: flex;
-    padding: 15px;
-    top: 18px;
+    background-color: #fff;
+    padding: 13px;
     border-radius: 10px;
+    width: 160px;
+    left: 40px;
+}
+
+.agency input {
+    position: relative;
+    width: 70px;
+    font-size: 17px;
+    border: none;
+    text-align: center;
+    color: #383737;
+    left: -5px;
+}
+
+.linha {
+    position: relative;
+    color: #383737;
+    left: -5px;
+
+}
+
+.icon {
+    background-color: var(--cor-botao);
+    padding: 13px;
+    border-radius: 10px;
+    position: relative;
+    right: -10px;
     cursor: pointer;
 }
 
+.icon ion-icon {
+    color: #858383;
+    font-size: 20px;
+}
 
+.acess {
+    position: relative;
+    right: 30px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.acess span {
+    padding-right: 5px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.account {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    right: 60px;
+    width: 15%;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    /* border: none; */
+    border: 1px solid #fff;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+
+}
+
+.account:hover {
+    background-color: #fff;
+    color: var(--cor-principal);
+}
 
